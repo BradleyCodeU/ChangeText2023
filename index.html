@@ -391,7 +391,23 @@ alert("Hello World")
 
     
   </script>
-  
+  <button onclick="changeParagraphText()">Change Paragraph</button>
+	<button onclick="changeHeadingText()">Change Heading</button>
+ <button type='button' onclick='document.getElementById("paragraph").innerHTML="Button1 clicked!"'>Button 1</button>
+  <button type='button' onclick='document.getElementById("heading").innerHTML="Button2 clicked!"'>Button 2</button>
+	
+	<script>
+		function changeParagraphText() {
+			document.getElementById("paragraph").innerHTML = "New paragraph text";
+		}
+
+		function changeHeadingText() {
+			document.getElementById("heading").innerHTML = "New heading text";
+		}
+
+		function changeImageSource() {
+			document.getElementById("image").src = "newimage.png";
+		}
   
   
   
